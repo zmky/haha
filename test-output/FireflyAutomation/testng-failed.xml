@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FireflyAutomation]">
+  <parameter name="locator" value="\tool\locators.properties"/>
+  <parameter name="data" value="\tool\test.properties"/>
+  <test name="Practice1(failed)">
+    <classes>
+      <class name="practicefour.Practice2OnTestNG">
+        <methods>
+          <include name="release"/>
+          <include name="equalMail"/>
+          <include name="startFirefox"/>
+        </methods>
+      </class> <!-- practicefour.Practice2OnTestNG -->
+    </classes>
+  </test> <!-- Practice1(failed) -->
+</suite> <!-- Failed suite [FireflyAutomation] -->

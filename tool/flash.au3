@@ -1,0 +1,5 @@
+WinWait("","","3")
+WinWaitActive("打开")
+ControlSetText("打开","","[CLASS:Edit; INSTANCE:1]","D:\testselenium\test2.jpg")
+ControlClick("打开","打开(O)","取消")
+Send("!O")

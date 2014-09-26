@@ -1,0 +1,15 @@
+<suite name="Haha" >
+	 <parameter name="TestData" value="\tool\test.properties" />	 
+	 <test name="Reg" preserve-order="true" >
+		<classes>			
+			<class name="reg.Reg" >
+		        <methods>  
+		          <include name="regaccountexist"/>	
+		          <include name="regaccountformat"/>
+		          <include name="regpwderror"/>	          
+		         </methods>   
+		   </class>
+		    
+		</classes>
+	</test> 	
+</suite> 

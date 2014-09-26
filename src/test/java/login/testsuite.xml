@@ -1,0 +1,16 @@
+<suite name="Haha" >
+	 <parameter name="TestData" value="\tool\test.properties" />	 
+	 <test name="Log" preserve-order="true" >
+		<classes>			
+			<class name="login.Log" >
+		        <methods>  
+		          <include name="accountnull"/>	
+		          <include name="pwdnull"/>
+		          <include name="pwderror"/>
+		          <include name="logsuccess"/>	          
+		         </methods>   
+		   </class>
+		    
+		</classes>
+	</test> 	
+</suite> 
