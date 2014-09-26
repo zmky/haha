@@ -288,6 +288,36 @@ public class Talk {
 			Assert.assertEquals(homepage.talkPic(),true);
 				
 		}
+		
+		@Test
+		public void talkVideo(){
+			
+			SimpleDateFormat sdf = new SimpleDateFormat();
+			String layout = "yyyyMMddHHmmss";
+			sdf.applyPattern(layout);
+			Calendar cl = Calendar.getInstance();
+			
+			String talktext = sdf.format(cl.getTime());
+			
+			homepage.openhaha(td.getValue("url"));
+			homepage.login();
+			regpage.switchLogin();
+//			logpage.setAccount(td.getValue("accountexist"));
+//			logpage.setPwd(td.getValue("pwd"));
+			logpage.setAccount("zmm@520.com");
+			logpage.setPwd("111111");
+			logpage.submit();
+			Assert.assertEquals(homepage.logsuccess(), true);
+			wait.waitFor(8000);
+			homepage.talk();
+			wait.waitFor(8000);
+			talkpage.setText(talktext);
+			talkpage.setVideo();
+			talkpage.submit();
+			Assert.assertEquals(homepage.talkText(), talktext);
+			Assert.assertEquals(homepage.talkVideo(),true);
+				
+		}
 		@AfterClass
 		public void releaseBrowser(){
 			//driver.quit();
