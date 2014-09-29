@@ -4,9 +4,11 @@
 		<classes>			
 			<class name="reg.Reg" >
 		        <methods>  
-		          <include name="regaccountexist"/>	
-		          <include name="regaccountformat"/>
-		          <include name="regpwderror"/>	          
+		          <include name="regAccountExist"/>	
+		          <include name="regAccountFormat"/>
+		          <include name="regPwdError"/>	
+		          <include name="regNicknameError"/>	
+		          <include name="regSuccess"/>         
 		         </methods>   
 		   </class>
 		    
