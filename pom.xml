@@ -55,12 +55,12 @@
         	<parallel>methods</parallel>
         	<threadCount>6</threadCount>
 		<suiteXmlFiles>
-		<suiteXmlFile>
-		${project.basedir}/src/test/java/reg/testsuite.xml
-		</suiteXmlFile>
-		<suiteXmlFile>
-		${project.basedir}/src/test/java/log/testsuite.xml
-		</suiteXmlFile>
+			<suiteXmlFile>
+			${project.basedir}/src/test/java/reg/testsuite.xml
+			</suiteXmlFile>
+			<suiteXmlFile>
+			${project.basedir}/src/test/java/login/loginsuite.xml
+			</suiteXmlFile>
 		</suiteXmlFiles>
         </configuration>
       </plugin>

@@ -1,4 +1,4 @@
-<suite name="Haha" >
+<suite name="Haha2" >
 	 <parameter name="TestData" value="\tool\test.properties" />	 
 	 <test name="Log" preserve-order="true" >
 		<classes>			
