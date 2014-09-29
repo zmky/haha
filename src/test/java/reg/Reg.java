@@ -134,6 +134,7 @@ public class Reg {
 			regpage.setAccount(accountname+"@zm.cn");
 			regpage.setPwd(td.getValue("pwd"));
 			regpage.setNickname(accountname);
+			wait.waitFor(20000);
 			regpage.submit();
 			wait.waitFor(8000);
 			Assert.assertEquals(regpage.getWebElement(RegLoc.regsuc, accountname).isDisplayed(), true);

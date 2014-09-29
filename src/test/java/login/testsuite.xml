@@ -4,10 +4,10 @@
 		<classes>			
 			<class name="login.Log" >
 		        <methods>  
-		          <include name="accountnull"/>	
-		          <include name="pwdnull"/>
-		          <include name="pwderror"/>
-		          <include name="logsuccess"/>	          
+		          <include name="accountNull"/>	
+		          <include name="pwdNull"/>
+		          <include name="pwdError"/>
+		          <include name="logSuccess"/>	          
 		         </methods>   
 		   </class>
 		    

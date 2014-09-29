@@ -64,7 +64,7 @@ public class HomePage {
 		 td=new ParseProperties(System.getProperty("user.dir")+"/tool/test.properties");
 		 wait.waitFor(8000);
 		 String account=nickname.getText();
-		 String account2=td.getValue("nickname2");
+		 String account2=td.getValue("nickname");
 		 return account.equals(account2);
 	 }
 	 

@@ -108,7 +108,8 @@ public class RegPage {
 	 
 	 public boolean nickErrorExist(){
 		 wait.waitForElementPresent(RegLoc.nickerror);
-		 String nicknameerrorexist=nickname.getText();
+		 String nicknameerrorexist=nicknameerror.getText();
+		 //System.out.println(nicknameerrorexist);
 		 String nicknameerrorexist2="该昵称已存在";
 		 return nicknameerrorexist.equals(nicknameerrorexist2);
 				

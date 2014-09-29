@@ -57,7 +57,6 @@ public class Talk {
 		regpage=new RegPage(driver);
 		logpage =new LogPage(driver);
 		wait=new Wait(driver);
-		log=new Log(driver);
 		talkpage=new TalkPage(driver);
 	}
 		

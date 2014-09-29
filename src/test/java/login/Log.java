@@ -43,12 +43,7 @@ public class Log {
 	private LogPage logpage;
 	private Wait wait;
 	
-	 public Log(WebDriver driver){
-		this.driver = driver;
-		wait=new Wait(driver);
-		PageFactory.initElements(driver, this);
-			
-	}
+
 	@BeforeClass
 	public void inialize(){
 	
@@ -113,4 +108,5 @@ public class Log {
 		public void releaseBrowser(){
 			//driver.quit();
 		}
+
 	}	
