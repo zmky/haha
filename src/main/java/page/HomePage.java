@@ -104,4 +104,9 @@ public class HomePage {
 		WebElement joke=jokes.get(0);
 		return joke.findElement(By.className("thumbnail")).isDisplayed();
 	}
+	
+	public boolean talkVideo(){
+		WebElement joke=jokes.get(0);
+		return joke.findElement(By.className("video-thumbnail")).isDisplayed();
+	}
 }
