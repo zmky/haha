@@ -1,0 +1,21 @@
+<suite name="talkjoke">
+	<parameter name="TestData" value="\tool\test.properties" />
+	<test name="Talk" preserve-order="true">
+		<classes>
+			<class name="talk.Talk">
+				<methods>
+					<include name="talkNull" />
+					<include name="talk" />
+					<include name="talkTopic" />
+					<include name="talkTopicOther" />
+					<include name="talkAnonymous" />
+					<include name="talkFace" />
+					<include name="talkPic" />
+					<include name="talkPicw" />
+					<include name="talkVideo" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+</suite> 

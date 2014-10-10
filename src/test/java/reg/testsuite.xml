@@ -1,17 +1,17 @@
-<suite name="Haha" >
-	 <parameter name="TestData" value="\tool\test.properties" />	 
-	 <test name="Reg" preserve-order="true" >
-		<classes>			
-			<class name="reg.Reg" >
-		        <methods>  
-		          <include name="regAccountExist"/>	
-		          <include name="regAccountFormat"/>
-		          <include name="regPwdError"/>	
-		          <include name="regNicknameError"/>	
-		          <include name="regSuccess"/>         
-		         </methods>   
-		   </class>
-		    
+<suite name="Haha">
+	<parameter name="TestData" value="\tool\test.properties" />
+	<test name="Reg" preserve-order="true">
+		<classes>
+			<class name="reg.Reg">
+				<methods>
+					<include name="regAccountExist" />
+					<include name="regAccountFormat" />
+					<include name="regPwdError" />
+					<include name="regNicknameError" />
+					<include name="regSuccess" />
+				</methods>
+			</class>
+
 		</classes>
-	</test> 	
+	</test>
 </suite> 

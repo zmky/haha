@@ -58,18 +58,19 @@ public class Talk {
 		logpage =new LogPage(driver);
 		wait=new Wait(driver);
 		talkpage=new TalkPage(driver);
+		homepage.openhaha(td.getValue("url"));
+		homepage.login();
+		regpage.switchLogin();
+		logpage.setAccount(td.getValue("accountexist"));
+		logpage.setPwd(td.getValue("pwd"));
+		logpage.submit();
+		Assert.assertEquals(homepage.logsuccess(), true);
 	}
 		
 		
 		@Test
 		public void talkNull(){
-			homepage.openhaha(td.getValue("url"));
-			homepage.login();
-			regpage.switchLogin();
-			logpage.setAccount(td.getValue("accountexist"));
-			logpage.setPwd(td.getValue("pwd"));
-			logpage.submit();
-			Assert.assertEquals(homepage.logsuccess(), true);
+
 			wait.waitFor(8000);
 			homepage.talk();
 			wait.waitFor(8000);
@@ -89,15 +90,15 @@ public class Talk {
 			
 			String talktext = sdf.format(cl.getTime());
 			
-			homepage.openhaha(td.getValue("url"));
-			homepage.login();
-			regpage.switchLogin();
+//			homepage.openhaha(td.getValue("url"));
+//			homepage.login();
+//			regpage.switchLogin();
 //			logpage.setAccount(td.getValue("accountexist"));
 //			logpage.setPwd(td.getValue("pwd"));
-			logpage.setAccount("zmm@520.com");
-			logpage.setPwd("111111");
-			logpage.submit();
-			Assert.assertEquals(homepage.logsuccess(), true);
+////			logpage.setAccount("zmm@520.com");
+////			logpage.setPwd("111111");
+//			logpage.submit();
+//			Assert.assertEquals(homepage.logsuccess(), true);
 			wait.waitFor(8000);
 			homepage.talk();
 			wait.waitFor(8000);
@@ -117,15 +118,15 @@ public class Talk {
 			
 			String talktext = sdf.format(cl.getTime());
 			
-			homepage.openhaha(td.getValue("url"));
-			homepage.login();
-			regpage.switchLogin();
+//			homepage.openhaha(td.getValue("url"));
+//			homepage.login();
+//			regpage.switchLogin();
 //			logpage.setAccount(td.getValue("accountexist"));
 //			logpage.setPwd(td.getValue("pwd"));
-			logpage.setAccount("zmm@520.com");
-			logpage.setPwd("111111");
-			logpage.submit();
-			Assert.assertEquals(homepage.logsuccess(), true);
+////			logpage.setAccount("zmm@520.com");
+////			logpage.setPwd("111111");
+//			logpage.submit();
+//			Assert.assertEquals(homepage.logsuccess(), true);
 			wait.waitFor(8000);
 			homepage.talk();
 			wait.waitFor(8000);
@@ -147,15 +148,15 @@ public class Talk {
 			
 			String talktext = sdf.format(cl.getTime());
 			
-			homepage.openhaha(td.getValue("url"));
-			homepage.login();
-			regpage.switchLogin();
+//			homepage.openhaha(td.getValue("url"));
+//			homepage.login();
+//			regpage.switchLogin();
 //			logpage.setAccount(td.getValue("accountexist"));
 //			logpage.setPwd(td.getValue("pwd"));
-			logpage.setAccount("zmm@520.com");
-			logpage.setPwd("111111");
-			logpage.submit();
-			Assert.assertEquals(homepage.logsuccess(), true);
+////			logpage.setAccount("zmm@520.com");
+////			logpage.setPwd("111111");
+//			logpage.submit();
+//			Assert.assertEquals(homepage.logsuccess(), true);
 			wait.waitFor(8000);
 			homepage.talk();
 			wait.waitFor(8000);
@@ -178,20 +179,20 @@ public class Talk {
 			
 			String talktext = sdf.format(cl.getTime());
 			
-			homepage.openhaha(td.getValue("url"));
-			homepage.login();
-			regpage.switchLogin();
+//			homepage.openhaha(td.getValue("url"));
+//			homepage.login();
+//			regpage.switchLogin();
 //			logpage.setAccount(td.getValue("accountexist"));
 //			logpage.setPwd(td.getValue("pwd"));
-			logpage.setAccount("zmm@520.com");
-			logpage.setPwd("111111");
-			logpage.submit();
-			Assert.assertEquals(homepage.logsuccess(), true);
+////			logpage.setAccount("zmm@520.com");
+////			logpage.setPwd("111111");
+//			logpage.submit();
+//			Assert.assertEquals(homepage.logsuccess(), true);
 			wait.waitFor(8000);
 			homepage.talk();
 			wait.waitFor(8000);
 			talkpage.setText(talktext);
-			talkpage.setTopicOther(td.getValue("topicz"));
+			talkpage.setAnonymous();
 			talkpage.submit();
 			Assert.assertEquals(homepage.talkText(), talktext);
 			Assert.assertEquals(homepage.talkAnonymous(), td.getValue("anonymous"));
@@ -208,15 +209,15 @@ public class Talk {
 			
 			String talktext = sdf.format(cl.getTime());
 			
-			homepage.openhaha(td.getValue("url"));
-			homepage.login();
-			regpage.switchLogin();
+//			homepage.openhaha(td.getValue("url"));
+//			homepage.login();
+//			regpage.switchLogin();
 //			logpage.setAccount(td.getValue("accountexist"));
-//			logpage.setPwd(td.getValue("pwd"));
-			logpage.setAccount("zmm@520.com");
-			logpage.setPwd("111111");
-			logpage.submit();
-			Assert.assertEquals(homepage.logsuccess(), true);
+//		    logpage.setPwd(td.getValue("pwd"));
+////			logpage.setAccount("zmm@520.com");
+////			logpage.setPwd("111111");
+//			logpage.submit();
+//			Assert.assertEquals(homepage.logsuccess(), true);
 			wait.waitFor(8000);
 			homepage.talk();
 			wait.waitFor(8000);
@@ -238,15 +239,15 @@ public class Talk {
 			
 			String talktext = sdf.format(cl.getTime());
 			
-			homepage.openhaha(td.getValue("url"));
-			homepage.login();
-			regpage.switchLogin();
+//			homepage.openhaha(td.getValue("url"));
+//			homepage.login();
+//			regpage.switchLogin();
 //			logpage.setAccount(td.getValue("accountexist"));
 //			logpage.setPwd(td.getValue("pwd"));
-			logpage.setAccount("zmm@520.com");
-			logpage.setPwd("111111");
-			logpage.submit();
-			Assert.assertEquals(homepage.logsuccess(), true);
+////			logpage.setAccount("zmm@520.com");
+////			logpage.setPwd("111111");
+//			logpage.submit();
+//			Assert.assertEquals(homepage.logsuccess(), true);
 			wait.waitFor(8000);
 			homepage.talk();
 			wait.waitFor(8000);
@@ -268,15 +269,15 @@ public class Talk {
 			
 			String talktext = sdf.format(cl.getTime());
 			
-			homepage.openhaha(td.getValue("url"));
-			homepage.login();
-			regpage.switchLogin();
+//			homepage.openhaha(td.getValue("url"));
+//			homepage.login();
+//			regpage.switchLogin();
 //			logpage.setAccount(td.getValue("accountexist"));
 //			logpage.setPwd(td.getValue("pwd"));
-			logpage.setAccount("zmm@520.com");
-			logpage.setPwd("111111");
-			logpage.submit();
-			Assert.assertEquals(homepage.logsuccess(), true);
+////			logpage.setAccount("zmm@520.com");
+////			logpage.setPwd("111111");
+//			logpage.submit();
+//			Assert.assertEquals(homepage.logsuccess(), true);
 			wait.waitFor(8000);
 			homepage.talk();
 			wait.waitFor(8000);
@@ -298,15 +299,15 @@ public class Talk {
 			
 			String talktext = sdf.format(cl.getTime());
 			
-			homepage.openhaha(td.getValue("url"));
-			homepage.login();
-			regpage.switchLogin();
+//			homepage.openhaha(td.getValue("url"));
+//			homepage.login();
+//			regpage.switchLogin();
 //			logpage.setAccount(td.getValue("accountexist"));
-//			logpage.setPwd(td.getValue("pwd"));
-			logpage.setAccount("zmm@520.com");
-			logpage.setPwd("111111");
-			logpage.submit();
-			Assert.assertEquals(homepage.logsuccess(), true);
+//		    logpage.setPwd(td.getValue("pwd"));
+////			logpage.setAccount("zmm@520.com");
+////			logpage.setPwd("111111");
+//			logpage.submit();
+//			Assert.assertEquals(homepage.logsuccess(), true);
 			wait.waitFor(8000);
 			homepage.talk();
 			wait.waitFor(8000);
@@ -319,7 +320,7 @@ public class Talk {
 		}
 		@AfterClass
 		public void releaseBrowser(){
-			//driver.quit();
+			driver.quit();
 		}
 	}	
 

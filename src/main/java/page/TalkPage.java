@@ -95,7 +95,7 @@ public class TalkPage {
 	public void setPicw(){
 		picw.click();
 		filetext.clear();
-		filetext.sendKeys(td.getValue("urlpic"));
+		filetext.sendKeys("http://p3.qqgexing.com/touxiang/20120901/1926/5041f0d047f70.jpg");
 		confirm.click();
 		wait.waitFor(8000);
 	}
@@ -103,7 +103,7 @@ public class TalkPage {
 	public void setVideo(){
 		video.click();
 		filetext.clear();
-		filetext.sendKeys(td.getValue("urlvideo"));
+		filetext.sendKeys("http://v.youku.com/v_show/id_XNzg4NDEyNDQw.html");
 		confirm.click();
 		wait.waitFor(8000);
 	}

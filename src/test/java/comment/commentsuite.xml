@@ -1,0 +1,14 @@
+<suite name="comment">
+	<parameter name="TestData" value="\tool\test.properties" />
+	<test name="Comment" preserve-order="true">
+		<classes>
+			<class name="comment.Comment">
+				<methods>
+					<include name="comment" />
+					<include name="commentDel" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+</suite> 
