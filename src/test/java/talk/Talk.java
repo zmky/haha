@@ -26,6 +26,7 @@ import page.LogPage;
 import page.RegPage;
 import login.Log;
 import page.TalkPage;
+import base.DateTimeUtil;
 
 
 
@@ -82,13 +83,13 @@ public class Talk {
 		@Test
 		public void talk(){
 			
-			SimpleDateFormat sdf = new SimpleDateFormat();
-			String layout = "yyyyMMddHHmmss";
-			sdf.applyPattern(layout);//// 调用SimpleDateFormat的applyPattern(String pattern)方法用新创建的日期格式表达式替换其原有的   
+//			SimpleDateFormat sdf = new SimpleDateFormat();
+//			String layout = "yyyyMMddHHmmss";
+//			sdf.applyPattern(layout);//// 调用SimpleDateFormat的applyPattern(String pattern)方法用新创建的日期格式表达式替换其原有的   
+//			
+//			Calendar cl = Calendar.getInstance();//默认是当前日期
 			
-			Calendar cl = Calendar.getInstance();//默认是当前日期
-			
-			String talktext = sdf.format(cl.getTime());
+//			String talktext = sdf.format(cl.getTime());
 			
 //			homepage.openhaha(td.getValue("url"));
 //			homepage.login();
@@ -99,6 +100,7 @@ public class Talk {
 ////			logpage.setPwd("111111");
 //			logpage.submit();
 //			Assert.assertEquals(homepage.logsuccess(), true);
+			String talktext =DateTimeUtil.getCurrentDateTime();
 			wait.waitFor(8000);
 			homepage.talk();
 			wait.waitFor(8000);
@@ -289,35 +291,35 @@ public class Talk {
 				
 		}
 		
-		@Test
-		public void talkVideo(){
-			
-			SimpleDateFormat sdf = new SimpleDateFormat();
-			String layout = "yyyyMMddHHmmss";
-			sdf.applyPattern(layout);
-			Calendar cl = Calendar.getInstance();
-			
-			String talktext = sdf.format(cl.getTime());
+		//@Test 该功能已取消
+//		public void talkVideo(){
+//			
+//			SimpleDateFormat sdf = new SimpleDateFormat();
+//			String layout = "yyyyMMddHHmmss";
+//			sdf.applyPattern(layout);
+//			Calendar cl = Calendar.getInstance();
+//			
+//			String talktext = sdf.format(cl.getTime());
 			
 //			homepage.openhaha(td.getValue("url"));
 //			homepage.login();
 //			regpage.switchLogin();
 //			logpage.setAccount(td.getValue("accountexist"));
 //		    logpage.setPwd(td.getValue("pwd"));
-////			logpage.setAccount("zmm@520.com");
-////			logpage.setPwd("111111");
+//			logpage.setAccount("zmm@520.com");
+//			logpage.setPwd("111111");
 //			logpage.submit();
 //			Assert.assertEquals(homepage.logsuccess(), true);
-			wait.waitFor(8000);
-			homepage.talk();
-			wait.waitFor(8000);
-			talkpage.setText(talktext);
-			talkpage.setVideo();
-			talkpage.submit();
-			Assert.assertEquals(homepage.talkText(), talktext);
-			Assert.assertEquals(homepage.talkVideo(),true);
-				
-		}
+//			wait.waitFor(8000);
+//			homepage.talk();
+//			wait.waitFor(8000);
+//			talkpage.setText(talktext);
+//			talkpage.setVideo();
+//			talkpage.submit();
+//			Assert.assertEquals(homepage.talkText(), talktext);
+//			Assert.assertEquals(homepage.talkVideo(),true);
+//				
+//		}
 		@AfterClass
 		public void releaseBrowser(){
 			driver.quit();

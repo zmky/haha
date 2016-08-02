@@ -23,44 +23,44 @@ public class TalkPage {
 	 private Do du;
 	 private ParseProperties td;
 	 
-	 @FindBy(id="talktextArea")
+	 @FindBy(id="joke-add-sharing-text")
 	 private WebElement talktext;
 	 
-	 @FindBy(id="add-face")
+	 @FindBy(linkText="表情")
 	 private WebElement faces;
+	 //所有的表情
+	 @FindBys(@FindBy(className="face-pane-item"))
+	 private List<WebElement> face;
 	 
-	@FindBy(xpath="//ul[@id='face-content']/descendant::a[1]")
-	private WebElement face;
-	 
-	 @FindBy(id="SWFUpload_0")
+	 @FindBy(className="webuploader-pick")
 	 private WebElement pic;
 	 
-	 @FindBy(id="add-website-file")
+	 @FindBy(className="images-add-web")
 	 private WebElement picw;
 	 
 	 
-	 @FindBy(className="file-url")
+	 @FindBy(className="images-add-url")
 	 private WebElement filetext;
 	 
 	 @FindBy(linkText="确定")
 	 private WebElement confirm;
+	 //添加视频功能已取消
+//	 @FindBy(id="add-video")
+//	 private WebElement video;
 	 
-	 @FindBy(id="add-video")
-	 private WebElement video;
-	 
-	 @FindBys(@FindBy(className="btn-topic"))
+	 @FindBys(@FindBy(className="joke-add-sharing-topic-item"))
 		private List<WebElement> topics;
 	 
-	 @FindBy(id="topic-user-input")
+	 @FindBy(className="joke-add-sharing-topic-input")
 	 private WebElement topictext;
 	 
 	 @FindBy(name="anonymous")
 	 private WebElement anonymous;
 	 
-	 @FindBy(id="submit-insert-joke")
+	 @FindBy(id="joke-add-sharing-submit")
 	 private WebElement submit;
 	
-	 @FindBy(id="submit-joke-error")
+	 @FindBy(id="joke-add-sharing-error")
 	 private WebElement error;
 	 
 	 public TalkPage(WebDriver driver){
@@ -78,7 +78,7 @@ public class TalkPage {
 	 public void setFace(){
 		 faces.click();
 		 wait.waitFor(3000);
-		 face.click();
+		 face.get(0).click();
 	 }
 	 
 	 public void setPic(){
@@ -100,13 +100,13 @@ public class TalkPage {
 		wait.waitFor(8000);
 	}
 	
-	public void setVideo(){
-		video.click();
-		filetext.clear();
-		filetext.sendKeys("http://v.youku.com/v_show/id_XNzg4NDEyNDQw.html");
-		confirm.click();
-		wait.waitFor(8000);
-	}
+//	public void setVideo(){
+//		video.click();
+//		filetext.clear();
+//		filetext.sendKeys("http://v.youku.com/v_show/id_XNzg4NDEyNDQw.html");
+//		confirm.click();
+//		wait.waitFor(8000);
+//	}
 
 	public void setAnonymous(){
 		anonymous.click();

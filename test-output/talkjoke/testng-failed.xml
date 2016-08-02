@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [talkjoke]">
+	<parameter name="TestData" value="\tool\test.properties" />
+	<test name="Talk(failed)">
+		<classes>
+			<class name="talk.Talk">
+				<methods>
+					<include name="talkAnonymous" />
+					<include name="inialize" />
+					<include name="talkNull" />
+					<include name="releaseBrowser" />
+				</methods>
+			</class> <!-- talk.Talk -->
+		</classes>
+	</test> <!-- Talk(failed) -->
+</suite> <!-- Failed suite [talkjoke] -->

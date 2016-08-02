@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [collect]">
+  <parameter name="TestData" value="\tool\test.properties"/>
+  <test name="Collect(failed)">
+    <classes>
+      <class name="collect.Collect">
+        <methods>
+          <include name="inialize"/>
+          <include name="releaseBrowser"/>
+          <include name="collectCancel"/>
+        </methods>
+      </class> <!-- collect.Collect -->
+    </classes>
+  </test> <!-- Collect(failed) -->
+</suite> <!-- Failed suite [collect] -->

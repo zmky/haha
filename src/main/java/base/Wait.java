@@ -22,10 +22,19 @@ public class Wait {
 		try{
 			(new WebDriverWait(driver, timeout)).until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
 		}catch(Exception e){
-			
+		}	
 		}
 		
+	public void waitForElementPresentByClass(String locator){
+		try{
+			(new WebDriverWait(driver, 5)).until(ExpectedConditions.presenceOfElementLocated(By.className(locator)));
+		}catch(Exception e){
+			
+		}
 	}
+
+		
+
 	
 	
 

@@ -40,10 +40,10 @@ public class RegPage {
 	 @FindBy(id="nickname_validationMessage")
 	 private WebElement nicknameerror;
 	 
-	 @FindBy(id="login-iframe")
+	 @FindBy(id="login-dialog-iframe")
 	 private WebElement loginiframe;
 	 
-	 String loginfr="//iframe[@id='login-iframe']";
+	 String loginfr="//iframe[@id='login-dialog-iframe']";
 	 
 	 public RegPage(WebDriver driver){
 		this.driver = driver;

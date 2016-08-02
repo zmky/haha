@@ -1,0 +1,14 @@
+<suite name="collect">
+	<parameter name="TestData" value="\tool\test.properties" />
+	<test name="Collect" preserve-order="true">
+		<classes>
+			<class name="collect.Collect">
+				<methods>
+					<include name="collect" />
+					<include name="collectCancel" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+</suite> 

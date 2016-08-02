@@ -4,8 +4,8 @@
 		<classes>
 			<class name="comment.Comment">
 				<methods>
-					<include name="comment" />
-					<include name="commentDel" />
+					<include name="commentReply" />
+					<include name="commentSensitive" />
 				</methods>
 			</class>
 

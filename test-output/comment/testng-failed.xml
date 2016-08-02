@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [comment]">
+  <parameter name="TestData" value="\tool\test.properties"/>
+  <test name="Comment(failed)">
+    <classes>
+      <class name="comment.Comment">
+        <methods>
+          <include name="inialize"/>
+          <include name="releaseBrowser"/>
+          <include name="commentSensitive"/>
+        </methods>
+      </class> <!-- comment.Comment -->
+    </classes>
+  </test> <!-- Comment(failed) -->
+</suite> <!-- Failed suite [comment] -->

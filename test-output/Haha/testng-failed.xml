@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Haha]">
-  <parameter name="TestData" value="\tool\test.properties"/>
-  <test name="Log(failed)">
-    <classes>
-      <class name="login.Log">
-        <methods>
-          <include name="pwderror"/>
-          <include name="accountnull"/>
-          <include name="releaseBrowser"/>
-          <include name="inialize"/>
-          <include name="logsuccess"/>
-        </methods>
-      </class> <!-- login.Log -->
-    </classes>
-  </test> <!-- Log(failed) -->
+	<parameter name="TestData" value="\tool\test.properties" />
+	<test name="Log(failed)">
+		<classes>
+			<class name="login.Log">
+				<methods>
+					<include name="logSuccess" />
+					<include name="releaseBrowser" />
+					<include name="inialize" />
+				</methods>
+			</class> <!-- login.Log -->
+		</classes>
+	</test> <!-- Log(failed) -->
 </suite> <!-- Failed suite [Haha] -->
