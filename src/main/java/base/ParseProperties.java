@@ -11,7 +11,7 @@ import java.util.Properties;
 import org.sqlite.SQLiteConfig.Encoding;
 
 public class ParseProperties {
-	//Javaä¸­æœ‰ä¸ªæ¯”è¾ƒé‡è¦çš„ç±»Propertiesï¼ˆJava.util.Propertiesï¼‰ï¼Œä¸»è¦ç”¨äºè¯»å–Javaçš„é…ç½®æ–‡ä»¶
+	//JavaÖĞÓĞ¸ö±È½ÏÖØÒªµÄÀàProperties£¨Java.util.Properties£©£¬Ö÷ÒªÓÃÓÚ¶ÁÈ¡JavaµÄÅäÖÃÎÄ¼ş
 	private  Properties pro = new Properties();
 	String value = null;
 	
@@ -23,15 +23,15 @@ public class ParseProperties {
 	private void loadProperties(String propertiespath){			
 		
 		try {
-			//FileInputStreamå’ŒFileOutputStreamç±»åˆ†åˆ«ç”¨æ¥åˆ›å»ºç£ç›˜æ–‡ä»¶çš„è¾“å…¥æµå’Œè¾“å‡ºæµå¯¹è±¡
-			//InputStream æ˜¯å­—èŠ‚è¾“å…¥æµçš„æ‰€æœ‰ç±»çš„è¶…ç±»,ä¸€èˆ¬æˆ‘ä»¬ä½¿ç”¨å®ƒçš„å­ç±»,å¦‚FileInputStreamç­‰
-			//InputStreamReader æ˜¯å­—èŠ‚æµé€šå‘å­—ç¬¦æµçš„æ¡¥æ¢,å®ƒå°†å­—èŠ‚æµè½¬æ¢ä¸ºå­—ç¬¦æµ.
-			//BufferedReaderä»å­—ç¬¦è¾“å…¥æµä¸­è¯»å–æ–‡æœ¬ï¼Œç¼“å†²å„ä¸ªå­—ç¬¦ï¼Œä»è€Œå®ç°å­—ç¬¦ã€æ•°ç»„å’Œè¡Œçš„é«˜æ•ˆè¯»å–
+			//FileInputStreamºÍFileOutputStreamÀà·Ö±ğÓÃÀ´´´½¨´ÅÅÌÎÄ¼şµÄÊäÈëÁ÷ºÍÊä³öÁ÷¶ÔÏó
+			//InputStream ÊÇ×Ö½ÚÊäÈëÁ÷µÄËùÓĞÀàµÄ³¬Àà,Ò»°ãÎÒÃÇÊ¹ÓÃËüµÄ×ÓÀà,ÈçFileInputStreamµÈ
+			//InputStreamReader ÊÇ×Ö½ÚÁ÷Í¨Ïò×Ö·ûÁ÷µÄÇÅÁº,Ëü½«×Ö½ÚÁ÷×ª»»Îª×Ö·ûÁ÷.
+			//BufferedReader´Ó×Ö·ûÊäÈëÁ÷ÖĞ¶ÁÈ¡ÎÄ±¾£¬»º³å¸÷¸ö×Ö·û£¬´Ó¶øÊµÏÖ×Ö·û¡¢Êı×éºÍĞĞµÄ¸ßĞ§¶ÁÈ¡
 			InputStream in = new FileInputStream(propertiespath);
 			InputStreamReader inr = new InputStreamReader(in);
 			BufferedReader br = new BufferedReader(inr);
-			//loadä»è¾“å…¥æµä¸­è¯»å–å±æ€§åˆ—è¡¨ï¼ˆé”®å’Œå…ƒç´ å¯¹ï¼‰ã€‚é€šè¿‡å¯¹æŒ‡å®šçš„æ–‡ä»¶è¿›è¡Œè£…è½½æ¥è·å–è¯¥æ–‡
-			//ä»¶ä¸­çš„æ‰€æœ‰é”® - å€¼å¯¹ã€‚ä»¥ä¾› getProperty ( String  key) æ¥æœç´¢ã€‚
+			//load´ÓÊäÈëÁ÷ÖĞ¶ÁÈ¡ÊôĞÔÁĞ±í£¨¼üºÍÔªËØ¶Ô£©¡£Í¨¹ı¶ÔÖ¸¶¨µÄÎÄ¼ş½øĞĞ×°ÔØÀ´»ñÈ¡¸ÃÎÄ
+			//¼şÖĞµÄËùÓĞ¼ü - Öµ¶Ô¡£ÒÔ¹© getProperty ( String  key) À´ËÑË÷¡£
 			pro.load(br);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -41,12 +41,12 @@ public class ParseProperties {
 	
 	//to get value of specific keyname
 	public String getValue(String keyname){
-		//java.util.Properties.getProperty(String key) æ–¹æ³•å°†æœç´¢æ­¤å±æ€§åˆ—è¡¨ä¸­æŒ‡å®šé”®çš„å±æ€§å€¼
-		//trimå»æ‰å­—ç¬¦ä¸²å¼€å¤´å’Œç»“å°¾çš„ç©ºæ ¼
+		//java.util.Properties.getProperty(String key) ·½·¨½«ËÑË÷´ËÊôĞÔÁĞ±íÖĞÖ¸¶¨¼üµÄÊôĞÔÖµ
+		//trimÈ¥µô×Ö·û´®¿ªÍ·ºÍ½áÎ²µÄ¿Õ¸ñ
 		value = pro.getProperty(keyname).trim();
 	    try {
-	    	//String.getBytes(String decode)æ–¹æ³•ä¼šæ ¹æ®æŒ‡å®šçš„decodeç¼–ç è¿”å›æŸå­—ç¬¦ä¸²åœ¨è¯¥ç¼–ç ä¸‹çš„byteæ•°ç»„è¡¨ç¤º ,byte[] b_utf8 = "ä¸­".getBytes("UTF-8"); 
-			//è€Œä¸getBytesç›¸å¯¹çš„ï¼Œå¯ä»¥é€šè¿‡new String(byte[], decode)çš„æ–¹å¼æ¥è¿˜åŸè¿™ä¸ªâ€œä¸­â€å­—æ—¶ï¼Œè¿™ä¸ªnew String(byte[], decode)å®é™…æ˜¯ä½¿ç”¨decodeæŒ‡å®šçš„ç¼–ç æ¥å°†byte[]è§£ææˆå­—ç¬¦ä¸²ã€‚
+	    	//String.getBytes(String decode)·½·¨»á¸ù¾İÖ¸¶¨µÄdecode±àÂë·µ»ØÄ³×Ö·û´®ÔÚ¸Ã±àÂëÏÂµÄbyteÊı×é±íÊ¾ ,byte[] b_utf8 = "ÖĞ".getBytes("UTF-8"); 
+			//¶øÓëgetBytesÏà¶ÔµÄ£¬¿ÉÒÔÍ¨¹ınew String(byte[], decode)µÄ·½Ê½À´»¹Ô­Õâ¸ö¡°ÖĞ¡±×ÖÊ±£¬Õâ¸önew String(byte[], decode)Êµ¼ÊÊÇÊ¹ÓÃdecodeÖ¸¶¨µÄ±àÂëÀ´½«byte[]½âÎö³É×Ö·û´®¡£
 	    	value = new String(value.getBytes("UTF-8"),"UTF-8");
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block

@@ -11,7 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import cn.xuexi.webdriver.baseapi.WebdriverBaseApi;
+//import cn.xuexi.webdriver.baseapi.WebdriverBaseApi;
 public class Browsers {
 
 	public WebDriver driver = null;
