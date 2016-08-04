@@ -62,7 +62,7 @@
 <!-- 			${project.basedir}/src/test/java/login/loginsuite.xml -->
 <!-- 			</suiteXmlFile> -->
 			<suiteXmlFile>
-			${project.basedir}/src/test/java/talk/testsuite.xml
+			${project.basedir}/src/test/java/collect/collectsuite.xml
 			</suiteXmlFile>
 		</suiteXmlFiles>
         </configuration>
