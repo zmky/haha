@@ -82,7 +82,7 @@ public class RegPage {
 		 wait.waitForElementPresent(RegLoc.accounterror);
 		 String accounterrorexist=accounterror.getText();
 		 //System.out.println(accounterror.getText());
-		 String accounterrorexist2="æ­¤é‚®ç®±åœ°å€å·²è¢«å ç”¨";
+		 String accounterrorexist2="´ËÓÊÏäµØÖ·ÒÑ±»Õ¼ÓÃ";
 		 //System.out.println(accounterrorexist2);
 		 return accounterrorexist.equals(accounterrorexist2);
 		 	 }
@@ -92,7 +92,7 @@ public class RegPage {
 		 wait.waitForElementPresent(RegLoc.accounterror);
 		 String accounterrorformat=accounterror.getText();
 		 //System.out.println(accounterrorformat);
-		 String accounterrorformat2="é‚®ç®±æ ¼å¼ä¸æ­£ç¡®";
+		 String accounterrorformat2="ÓÊÏä¸ñÊ½²»ÕıÈ·";
 		 return accounterrorformat.equals(accounterrorformat2);
 				 
 	 }
@@ -101,7 +101,7 @@ public class RegPage {
 		 wait.waitForElementPresent(RegLoc.pwderror);
 		 String pwderrorfive=pwderror.getText();
 		 System.out.println(pwderror);
-		 String pwderrorfive2="å¯†ç é•¿åº¦ä¸æ­£ç¡®ï¼Œåº”ä¸º6ï½20ä¸ªå­—ç¬¦";
+		 String pwderrorfive2="ÃÜÂë³¤¶È²»ÕıÈ·£¬Ó¦Îª6¡«20¸ö×Ö·û";
 		 return pwderrorfive.equals(pwderrorfive2);
 				 
 	 }
@@ -110,7 +110,7 @@ public class RegPage {
 		 wait.waitForElementPresent(RegLoc.nickerror);
 		 String nicknameerrorexist=nicknameerror.getText();
 		 //System.out.println(nicknameerrorexist);
-		 String nicknameerrorexist2="è¯¥æ˜µç§°å·²å­˜åœ¨";
+		 String nicknameerrorexist2="¸ÃêÇ³ÆÒÑ´æÔÚ";
 		 return nicknameerrorexist.equals(nicknameerrorexist2);
 				
 	 }
