@@ -25,7 +25,7 @@
         <configuration>
           <source/>
           <target/>
-          <encoding>UTF-8</encoding>
+          <encoding>GBK</encoding>
         </configuration>
       </plugin>
       
