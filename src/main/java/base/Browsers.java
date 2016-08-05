@@ -52,7 +52,8 @@ public class Browsers {
 		        driver.manage().window().maximize();
 		        break;
 		    case chrome:
-				System.setProperty("webdriver.chrome.driver", projectpath+"/tool/chromedriver.exe"); 
+				//System.setProperty("webdriver.chrome.driver", projectpath+"/tool/chromedriver.exe"); 
+		    	System.setProperty("webdriver.chrome.driver","C:/Program Files (x86)/Google/Chrome/Application/chromedriver.exe"); 
 				caps = DesiredCapabilities.chrome();
 				caps.setCapability("chrome.switches",Arrays.asList("--start-maximized"));  //���browser
 				//capabilities.setCapability("chrome.switches", Arrays.asList("--proxy-server=http://your-proxy-domain:4443")); //���ô���
