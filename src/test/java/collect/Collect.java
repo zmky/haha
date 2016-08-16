@@ -42,7 +42,7 @@ public class Collect{
 	@BeforeClass
 	public void inialize(){
 	
-		Browsers brower = new Browsers(BrowsersType.ie);
+		Browsers brower = new Browsers(BrowsersType.chrome);
 		driver = brower.driver; 
 		td=new ParseProperties(System.getProperty("user.dir")+"/tool/test.properties");
 		driver.manage().window().maximize();
