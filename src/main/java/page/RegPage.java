@@ -81,7 +81,7 @@ public class RegPage {
 	 public boolean  accountErrorExist(){
 		 wait.waitForElementPresent(RegLoc.accounterror);
 		 String accounterrorexist=accounterror.getText();
-		 //System.out.println(accounterror.getText());
+		 //System.out.println(accounterrorexist);
 		 String accounterrorexist2="此邮箱地址已被占用";
 		 //System.out.println(accounterrorexist2);
 		 return accounterrorexist.equals(accounterrorexist2);

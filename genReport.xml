@@ -1,14 +1,17 @@
-<project name="FireflyAutomation" basedir=".">
-    <property name="LIB" value="${basedir}/libs" />
-    <path id="master-classpath">
+<project name="Haha" basedir=".">
+<!--     把jar包放到libs中，并导入到classpath里面 -->
+	<property name="LIB" value="${basedir}/libs" />
+    <path id="master-classpath"> 
          <fileset dir="${LIB}">
             <include name="**/*.jar" />
         </fileset>
     </path>
      
     <target name="testcase">
+<!--         property这里面定义一个变量 -->
         <property name="dir" value=""/>
-    	<delete dir="${test.dir}/single/output"/>
+<!--     	<delete dir="${test.dir}/single/output"/> -->
+<!-- 		 创建目录 -->
         <mkdir dir="${basedir}/output"/>
 
         <xslt in="${basedir}/test-output/testng-results.xml" style="${basedir}/tool/testng-results.xsl" out="${basedir}/output/index.html" classpathref="master-classpath" processor="SaxonLiaison">
