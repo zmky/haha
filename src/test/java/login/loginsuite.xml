@@ -2,7 +2,7 @@
 	<parameter name="TestData" value="\tool\test.properties" />
 	<test name="Log" preserve-order="true">
 		<classes>
-			<class name="login.Log">
+			<class name="login.Login">
 				<methods>
 					<include name="accountNull" />
 					<include name="pwdNull" />

@@ -17,6 +17,7 @@ public class Browsers {
 	public WebDriver driver = null;
 	private FirefoxProfile firefoxprofile = null;
 	private static DesiredCapabilities caps = null;
+	//获取项目路径
 	private String projectpath =System.getProperty("user.dir");
 
 	
@@ -27,7 +28,6 @@ public class Browsers {
 		    	File firebug = new File(projectpath+"/tool/firebug-1.12.1-fx.xpi");
 			    File firepath = new File(projectpath+"/tool/firepath-0.9.7-fx.xpi");
 				firefoxprofile =  new FirefoxProfile();
-				
 				try {
 					firefoxprofile.addExtension(firebug);
 					firefoxprofile.addExtension(firepath);
@@ -38,11 +38,10 @@ public class Browsers {
 					e.printStackTrace();
 				}
 				driver = new FirefoxDriver(firefoxprofile);
-		    	driver = new FirefoxDriver();
 				driver.manage().window().maximize();
 				break;
 		    case ie:	
-		    	System.setProperty("webdriver.ie.driver", projectpath+"/tool/IEDriverServer32.exe"); 
+		    	System.setProperty("webdriver.ie.driver", projectpath+"/tool/IEDriverServer64.exe"); 
 				caps = DesiredCapabilities.internetExplorer();
 				caps.setCapability(InternetExplorerDriver.FORCE_CREATE_PROCESS, false);
 				caps.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);   
@@ -52,12 +51,13 @@ public class Browsers {
 		        driver.manage().window().maximize();
 		        break;
 		    case chrome:
-				System.setProperty("webdriver.chrome.driver", projectpath+"/tool/chromedriver.exe"); 
-		    	//System.setProperty("webdriver.chrome.driver","C:/Program Files (x86)/Google/Chrome/Application/chromedriver.exe"); 
-				caps = DesiredCapabilities.chrome();
-				caps.setCapability("chrome.switches",Arrays.asList("--start-maximized"));  //锟斤拷锟絙rowser
-				//capabilities.setCapability("chrome.switches", Arrays.asList("--proxy-server=http://your-proxy-domain:4443")); //锟斤拷锟矫达拷锟斤拷
-				driver = new ChromeDriver(caps);
+				//System.setProperty("webdriver.chrome.driver", projectpath+"/tool/chromedriver.exe"); 
+				//caps = DesiredCapabilities.chrome();
+				//caps.setCapability("chrome.switches",Arrays.asList("--start-maximized"));  //最大化browser
+				//capabilities.setCapability("chrome.switches", Arrays.asList("--proxy-server=http://your-proxy-domain:4443")); //设置代理
+				//driver = new ChromeDriver(caps);
+				System.setProperty("webdriver.chrome.bin", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
+				driver=new ChromeDriver();
 				driver.manage().window().maximize();
 				break;
 		}

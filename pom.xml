@@ -72,7 +72,7 @@
 
 
 
-  
+<!--  远程仓库，下面这个是中央仓库  -->
  <repositories>
       <repository>
           <id>ibiblio</id>

@@ -28,7 +28,7 @@ import base.LogLoc;
 import page.HomePage;
 import page.LogPage;
 import page.RegPage;
-import login.Log;
+import login.Login;
 import page.TalkPage;
 
 
@@ -52,7 +52,7 @@ public class Comment {
 	private RegPage regpage;
 	private LogPage logpage;
 	private Wait wait;
-	private Log log;
+	private Login log;
 	private TalkPage talkpage;
 
 	//@BeforeClass

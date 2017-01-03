@@ -1,0 +1,16 @@
+<suite name="report">
+    <parameter name="TestData" value="\tool\test.properties" />
+	<test name="Report" preserve-order="true">
+		<classes>
+			<class name="report.Report">
+				<methods>
+					<include name="reportAd" />
+					<include name="reportOneHundred" />
+					<include name="reportDiscord" />
+					<include name="reportOtherReason" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+</suite> 

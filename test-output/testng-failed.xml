@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [report]">
+  <parameter name="TestData" value="\tool\test.properties"/>
+  <test name="Report(failed)">
     <classes>
-      <class name="reg.Reg">
+      <class name="report.Report">
         <methods>
-          <include name="regAccountExist"/>
-          <include name="releaseBrowser"/>
           <include name="inialize"/>
+          <include name="reportAd"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- reg.Reg -->
+      </class> <!-- report.Report -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Report(failed) -->
+</suite> <!-- Failed suite [report] -->

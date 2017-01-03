@@ -6,8 +6,8 @@
     <classes>
       <class name="collect.Collect">
         <methods>
+          <include name="collect"/>
           <include name="inialize"/>
-          <include name="releaseBrowser"/>
           <include name="collectCancel"/>
         </methods>
       </class> <!-- collect.Collect -->

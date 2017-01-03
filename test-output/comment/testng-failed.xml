@@ -7,7 +7,7 @@
       <class name="comment.Comment">
         <methods>
           <include name="inialize"/>
-          <include name="releaseBrowser"/>
+          <include name="commentReply"/>
           <include name="commentSensitive"/>
         </methods>
       </class> <!-- comment.Comment -->

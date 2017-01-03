@@ -1,0 +1,15 @@
+<suite name="despise">
+    <parameter name="TestData" value="\tool\test.properties" />
+	<test name="Despise" preserve-order="true">
+		<classes>
+			<class name="despise.Despise">
+				<methods>
+					<include name="praise" />
+					<include name="praiseOne" />
+					<include name="praisePic" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+</suite> 

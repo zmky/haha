@@ -4,13 +4,13 @@
 	<parameter name="TestData" value="\tool\test.properties" />
 	<test name="Log(failed)">
 		<classes>
-			<class name="login.Log">
+			<class name="login.Login">
 				<methods>
 					<include name="logSuccess" />
 					<include name="releaseBrowser" />
 					<include name="inialize" />
 				</methods>
-			</class> <!-- login.Log -->
+			</class> <!-- login.Login -->
 		</classes>
 	</test> <!-- Log(failed) -->
 </suite> <!-- Failed suite [Haha] -->

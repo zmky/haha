@@ -1,5 +1,5 @@
 <suite name="collect">
-	<parameter name="TestData" value="\tool\test.properties" />
+    <parameter name="TestData" value="\tool\test.properties" />
 	<test name="Collect" preserve-order="true">
 		<classes>
 			<class name="collect.Collect">

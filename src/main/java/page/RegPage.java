@@ -55,8 +55,9 @@ public class RegPage {
 	 public void switchLogin(){
 		 wait.waitForElementPresent(loginfr);
 		 driver.switchTo().frame(loginiframe);
-
-		 
+	 }
+	 public void switchDefault(){
+		 driver.switchTo().defaultContent();
 	 }
 	 public void setAccount(String account){
 		 wait.waitFor(5000);

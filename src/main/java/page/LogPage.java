@@ -51,7 +51,9 @@ public class LogPage {
 	 public void submit(){
 		 submit.click();
 	 }
-	 
+	 public void switchDefault(){
+		 driver.switchTo().defaultContent();
+	 }
 	 public boolean  accountNull(){
 		 wait.waitForElementPresent(LogLoc.error);
 		 String accountnull=loginerror.getText();

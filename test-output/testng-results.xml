@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23045" started-at="2016-08-09T04:45:10Z" finished-at="2016-08-09T04:45:33Z">
+  <suite name="report" duration-ms="115641" started-at="2016-12-08T05:05:41Z" finished-at="2016-12-08T05:07:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23045" started-at="2016-08-09T04:45:10Z" finished-at="2016-08-09T04:45:33Z">
-      <class name="reg.Reg">
-        <test-method status="PASS" signature="inialize()[pri:0, instance:reg.Reg@3d205adc]" name="inialize" is-config="true" duration-ms="3131" started-at="2016-08-09T12:45:10Z" finished-at="2016-08-09T12:45:13Z">
+    <test name="Report" duration-ms="115641" started-at="2016-12-08T05:05:41Z" finished-at="2016-12-08T05:07:36Z">
+      <class name="report.Report">
+        <test-method status="PASS" signature="inialize()[pri:0, instance:report.Report@196a1a66]" name="inialize" is-config="true" duration-ms="94581" started-at="2016-12-08T13:05:41Z" finished-at="2016-12-08T13:07:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inialize -->
-        <test-method status="PASS" signature="regAccountFormat()[pri:0, instance:reg.Reg@3d205adc]" name="regAccountFormat" duration-ms="19892" started-at="2016-08-09T12:45:13Z" finished-at="2016-08-09T12:45:33Z">
+        <test-method status="PASS" signature="reportAd()[pri:0, instance:report.Report@196a1a66]" name="reportAd" duration-ms="5360" started-at="2016-12-08T13:07:15Z" finished-at="2016-12-08T13:07:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- regAccountFormat -->
-        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:reg.Reg@3d205adc]" name="releaseBrowser" is-config="true" duration-ms="0" started-at="2016-08-09T12:45:33Z" finished-at="2016-08-09T12:45:33Z">
+        </test-method> <!-- reportAd -->
+        <test-method status="PASS" signature="reportOneHundred()[pri:0, instance:report.Report@196a1a66]" name="reportOneHundred" duration-ms="5226" started-at="2016-12-08T13:07:21Z" finished-at="2016-12-08T13:07:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- releaseBrowser -->
-      </class> <!-- reg.Reg -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- reportOneHundred -->
+        <test-method status="PASS" signature="reportDiscord()[pri:0, instance:report.Report@196a1a66]" name="reportDiscord" duration-ms="5217" started-at="2016-12-08T13:07:26Z" finished-at="2016-12-08T13:07:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportDiscord -->
+        <test-method status="PASS" signature="reportOtherReason()[pri:0, instance:report.Report@196a1a66]" name="reportOtherReason" duration-ms="5232" started-at="2016-12-08T13:07:31Z" finished-at="2016-12-08T13:07:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportOtherReason -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:report.Report@196a1a66]" name="afterClass" is-config="true" duration-ms="0" started-at="2016-12-08T13:07:36Z" finished-at="2016-12-08T13:07:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- report.Report -->
+    </test> <!-- Report -->
+  </suite> <!-- report -->
 </testng-results>
