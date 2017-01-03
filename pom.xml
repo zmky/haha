@@ -64,6 +64,9 @@
 			<suiteXmlFile>
 			${project.basedir}/src/test/java/collect/collectsuite.xml
 			</suiteXmlFile>
+			<suiteXmlFile>
+			${project.basedir}/src/test/java/report/reportsuite.xml
+			</suiteXmlFile>
 		</suiteXmlFiles>
         </configuration>
       </plugin>
